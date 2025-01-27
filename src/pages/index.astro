@@ -1,34 +1,40 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import '@fontsource-variable/literata';
 import {siteConfig} from  '../config/site';
 ---
 
 <Layout title="home">
-	<main class="text-zinc-100 font-consolas">
-		<h1 class="text-zinc-100 mb-8 text-3xl">
+	<main class="text-[#1a1c1a] font-literata w-full mx-auto">
+		<h1 class="text-[#1a1c1a] mb-8 text-3xl">
 			Subhajit Das
 		</h1>
-		<p class="text-zinc-100 my-4 text-[15px]">
+		<p class="text-[#1a1c1a] my-4 text-[16px]">
 			Hi there, I'm Subhajit, but my friends call me Jeet. I grew up in India, but nowadays roaming around in America. I've got an engineering degree in computer science, although I've been building (mostly breaking) stuff ever since I was a kid. 
 		</p>
-		<ul class="text-zinc-100 pt-2 flex flex-col my-6 list-none text-[15px]">
+
+		<p class="text-[#1a1c1a] my-4 text-[16px]">
+			I graduated from Boston University with a Computer Science degree. Previously, I  led backend team at <a href="https://www.hack4impact.org" class="hover:text-zinc-400 decoration-2 decoration-neutral-400">Hack4Impact</a>, worked as an early engineer at an early stage start-up  <a href="https://www.fylehq.com" class="hover:text-zinc-400 decoration-2 decoration-neutral-400">Fyle</a>,  and big tech company <a href="https://www.opentext.com" class="hover:text-zinc-400 decoration-2 decoration-neutral-400">OpenText</a> as a software engineer. 
+		</p>
+
+		<ul class="text-[#1a1c1a] pt-2 flex flex-col my-6 list-none text-[16px]">
 			<li class="mt-2 flex flex-row space-x-1">
-				<a class="hover:text-zinc-400 decoration-2 decoration-neutral-400" href={siteConfig.twitter}>
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+				<a class="hover:text-[#1a1c1a] decoration-2 decoration-neutral-400" href={siteConfig.twitter}>
 					twitter
 				</a>
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
 			</li>
 			<li class="mt-2 flex flex-row space-x-1">
-				<a class="hover:text-zinc-400 decoration-2 decoration-neutral-400" href={siteConfig.linkedin} target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+				<a class="hover:text-[#1a1c1a] decoration-2 decoration-neutral-400" href={siteConfig.linkedin} target="_blank">
 					linkedin
 				</a>
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
 			</li>
 			<li class="mt-2 flex flex-row space-x-1">
-				<a class="hover:text-zinc-400 decoration-2 decoration-neutral-400" href={siteConfig.github}>
+				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+				<a class="hover:text-[#1a1c1a] decoration-2 decoration-neutral-400" href={siteConfig.github}>
 					github
 				</a>
-				<svg xmlns="http://www.w3.org/2000/svg" width="20" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
 			</li>
 		</ul>
 	</main>
